@@ -23,10 +23,10 @@
         <div class="bookBody">
             <label for="bookName" class="my-3 fw-semibold">
                 <i class="fa-solid fa-book-bookmark"></i>  Site Name</label>
-                <input  placeholder="Bookmark Name" type="text" name="bookName" id="bookName" class="form-control mb-3 ">
+                <input oninput="validateBookName()"  placeholder="Bookmark Name" type="text" name="bookName" id="bookName" class="form-control mb-3 ">
             <label for="bookWebSite" class="my-3 fw-semibold ">
                 <i class="fa-solid fa-link"></i> Site URL</label>
-                <input  placeholder="Website URL" type="text" name="bookWebSite" id="bookWebSite" class="form-control mb-5  ">
+                <input oninput="validateUrl()"  placeholder="Website URL" type="text" name="bookWebSite" id="bookWebSite" class="form-control mb-5  ">
                 <div class="button d-flex justify-content-center pb-5">
                     <button onclick="addBook()" class="btn btn-danger w-25    ">Submit</button>
                 </div>
